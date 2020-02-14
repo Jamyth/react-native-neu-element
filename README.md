@@ -1,4 +1,4 @@
-# react-native-neu-element &middot; [![Github license](https://img.shields.io/badge/license-MIT-blue.svg)]()
+# react-native-neu-element &middot; [![Github license](https://img.shields.io/badge/license-MIT-blue.svg)]() [![npm version](https://img.shields.io/npm/v/react-native-neu-element)]()
 
 React-native-neu-element is a JavaScript library for building neumorphic ui on react-native.
 
