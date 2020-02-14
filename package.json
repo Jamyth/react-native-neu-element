@@ -1,0 +1,27 @@
+{
+  "name": "react-native-neu-element",
+  "version": "1.0.0",
+  "description": "Neumorphism UI library for react-native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "neumorphism",
+    "mobile",
+    "UI",
+    "ios",
+    "android"
+  ],
+  "author": "Jamyth Luk",
+  "license": "MIT",
+  "dependencies": {
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-reanimated": "^1.7.0",
+    "react-native-svg": "^11.0.1",
+    "react-native-text-gradient": "^0.1.7"
+  }
+}
