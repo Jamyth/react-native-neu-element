@@ -31,7 +31,7 @@ I am finding a way to install all dependencies by just installing `RNNE`, sorry 
 If you are a professional svg player, please help create the real inset shadow.
 You are welcome to leave comments if you found any bugs or thing to have.
 
-## Required Props
+## Props
 
 Every Neumorphic Component in `react-native-neu-element` has the following props:
 ( \*must have )
@@ -39,7 +39,6 @@ Every Neumorphic Component in `react-native-neu-element` has the following props
 1. Color: String\*
 2. Height: Number\*
 3. Width: Number\*
-4. borderRadius: Number
 
 ## Examples
 
@@ -81,6 +80,30 @@ import { NeuView } from 'react-native-neu-element';
         </NeuView>
 
     );
+...
+```
+
+Don't like every element in the child of NeuView to be centered?
+Use `containerStyle` props to re-style your component!
+...Or wrap your children with a View and nest it inside NeuView.
+
+```
+import { NeuView } from 'react-native-neu-element'
+...
+    return (
+      <NeuView
+        width={100}
+        height={100}
+        color={'#eef2f9'}
+
+        containerStyle={{
+          //Any style
+          flexDirection: 'row'
+        }}
+      >
+        //Your Code
+      </NeuView>
+    )
 ...
 ```
 
@@ -181,6 +204,8 @@ Waiting for toggling button? Here it is !
 
 ![Imgur](https://i.imgur.com/H1kuABVm.jpg)
 
+as it is a switch button, isPressed and setIsPressed is needed for state.
+
 ```
 import {NeuSwitch} from 'react-native-neu-element';
 ...
@@ -211,4 +236,64 @@ import {NeuSwitch} from 'react-native-neu-element';
 ...
 ```
 
-I will update the rest tomorrow
+5. NeuSpinner
+
+Most of the apps have remote data, that is why we need a cute spinner.
+
+![Imgur](https://i.imgur.com/HeG3FFxl.mp4)
+
+```
+import { NeuSpinner } from 'react-native-neu-element;
+...
+    return (
+      <NeuSpinner
+        //Required
+        color='#eef2f9'
+        size={50}
+        indicatorColor='#aaffc3' // Mint
+
+        //Optional
+        //Determine how fast do a spinner spin one cycle
+        //Default: 1000
+        duration={1000}
+
+        //Optional
+        //Easing Type
+        //Accept Easing from react-native-reanimated
+        //Default: Easing.linear
+        easingType={Easing.linear}
+      />
+    )
+...
+```
+
+6. NeuBorderView
+
+NeuView With a nice looking border.
+
+![NeuBorderView](https://i.imgur.com/EBjrSbFm.jpg)
+
+```
+import { NeuBorderView } from 'react-native-neu-element'
+...
+    return (
+      <NeuBorderView
+        //Required
+        width={200}
+        height={100}
+        color={'#eef2f9'}
+
+        //Optional
+        //Specify the width of the border
+        //Default: 10
+        borderWidth={10}
+
+        //Optional
+        //Specify the radius of the border
+        //Default: 0
+        borderRadius={16}
+      >
+      </NeuBorderView>
+    )
+...
+```
