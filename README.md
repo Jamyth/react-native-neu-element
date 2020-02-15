@@ -6,7 +6,7 @@ React-native-neu-element ( `RNNE` ) is a JavaScript library for building neumorp
 
 - **Generic Component** `RNNE` makes it easier to create your own neumorphic component by implementing custom styling.
 
-* **Auto Calculate** `RNNE` will automatically calculate the shadows for light and dark base on your theme color, of course you need to pass in `color` as props.
+- **Auto Calculate** `RNNE` will automatically calculate the shadows for light and dark base on your theme color, of course you need to pass in `color` as props.
 
 ![react-native-neu-element demo](https://i.imgur.com/niQv6fdl.jpg)
 
@@ -25,6 +25,11 @@ Install library from `npm`
 `npm install --save react-native-linear-gradient`
 
 I am finding a way to install all dependencies by just installing `RNNE`, sorry about that.
+
+## Notice
+
+If you are a professional svg player, please help create the real inset shadow.
+You are welcome to leave comments if you found any bugs or thing to have.
 
 ## Required Props
 
@@ -47,9 +52,7 @@ Same as `View` in `react-native`.
 
 ```
 import { NeuView } from 'react-native-neu-element';
-.
-.
-.
+...
     return (
         // Normal
         <NeuView color='#eef2f9' height={100} width={100} borderRadius={16}>
@@ -78,9 +81,7 @@ import { NeuView } from 'react-native-neu-element';
         </NeuView>
 
     );
-.
-.
-.
+...
 ```
 
 ###### 2. NeuInput
@@ -91,17 +92,13 @@ Simple Neumorphic Text Input
 
 ```
 import { NeuInput } from 'react-native-neu-element';
-.
-.
-.
+...
     return (
       <>
         <NeuInput onChangeText={setText} value={text} placeholder='Text Input...'/>
       </>
     );
-.
-.
-.
+...
 ```
 
 You can also add prefix into text input like this:
@@ -111,9 +108,7 @@ You can also add prefix into text input like this:
 ```
 import { NeuInput } from 'react-native-neu-element';
 import { Image } from 'react-native';
-.
-.
-.
+...
     return (
       <>
         <NeuInput
@@ -126,27 +121,23 @@ import { Image } from 'react-native';
         />
       </>
     );
-.
-.
-.
+...
 ```
 
 3. NeuButton
 
 Very similar to what `NeuView` does, well they are the same, instead, this time it is touchable!
 
+You can pass in `onPress` / `onPressIn` / `onPressOut` to execute different action in a single press action.
+
 ![NeuButton](https://i.imgur.com/7vh1XC5m.jpg)
 
 ```
 import { NeuButton } from 'react-native-neu-element'
-.
-.
-.
+...
     return (
         //Normal Button
         <NeuButton
-            isPressed={isPressed}
-            setIsPressed={setIsPressed}
             color="#eef2f9"
             width={100}
             height={100}
@@ -157,8 +148,6 @@ import { NeuButton } from 'react-native-neu-element'
 
           //Convex Button
           <NeuButton
-            isPressed={isPressed2}
-            setIsPressed={setIsPressed2}
             color="#eef2f9"
             width={100}
             height={100}
@@ -172,8 +161,6 @@ import { NeuButton } from 'react-native-neu-element'
 
           //Make it always active
           <NeuButton
-            isPressed={isPressed2}
-            setIsPressed={setIsPressed2}
             color="#eef2f9"
             width={100}
             height={100}
@@ -185,9 +172,7 @@ import { NeuButton } from 'react-native-neu-element'
             <Text>Active Btn</Text>
           </NeuButton>
     );
-.
-.
-.
+...
 ```
 
 4. NeuSwitch
@@ -198,9 +183,7 @@ Waiting for toggling button? Here it is !
 
 ```
 import {NeuSwitch} from 'react-native-neu-element';
-.
-.
-.
+...
     return (
         <NeuSwitch
           isPressed={isPressed}
@@ -225,9 +208,7 @@ import {NeuSwitch} from 'react-native-neu-element';
           customGradient={['#fc6859', '#e945d0']}
         />
     );
-.
-.
-.
+...
 ```
 
 I will update the rest tomorrow
