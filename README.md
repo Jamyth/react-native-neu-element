@@ -240,7 +240,8 @@ import {NeuSwitch} from 'react-native-neu-element';
 
 Most of the apps have remote data, that is why we need a cute spinner.
 
-![Imgur](https://i.imgur.com/HeG3FFxl.mp4)
+![NeuSpinner](https://i.imgur.com/X3jnLNnm.gif)
+this preview seems laggy, but the result in the application is much smoother as normal.
 
 ```
 import { NeuSpinner } from 'react-native-neu-element;
