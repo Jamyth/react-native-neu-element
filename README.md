@@ -1,5 +1,6 @@
 # react-native-neu-element &middot; [![Github license](https://img.shields.io/badge/license-MIT-blue.svg)]() [![npm version](https://img.shields.io/npm/v/react-native-neu-element)](https://npmjs.com/package/react-native-neu-element) ![Downloads](https://img.shields.io/npm/dw/react-native-neu-element.svg?color=blue)
 
+A React Native Component Library built on top of the concept of neumorphism.(Work for Android and Ios)
 React-native-neu-element ( `RNNE` ) is a JavaScript library for building neumorphic ui on react-native.
 
 - **Easy To Use:** `RNNE` makes it easier to create neumorphic ui without so much pain.
