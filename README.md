@@ -25,6 +25,8 @@ Install library from `npm`
 
 `npm install --save react-native-linear-gradient`
 
+`npm install --save react-native-neu-element react-native-svg react-native-reanimated react-native-linear-gradient`
+
 I am finding a way to install all dependencies by just installing `RNNE`, sorry about that.
 
 ## Notice
