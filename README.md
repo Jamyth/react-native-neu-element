@@ -1,3 +1,6 @@
+# This package is deprecated, please use other package.
+# [react-native-neomorph-shadows](https://github.com/tokkozhin/react-native-neomorph-shadows)
+
 # react-native-neu-element &middot; [![Github license](https://img.shields.io/badge/license-MIT-blue.svg)]() [![npm version](https://img.shields.io/npm/v/react-native-neu-element)](https://npmjs.com/package/react-native-neu-element) ![Downloads](https://img.shields.io/npm/dw/react-native-neu-element.svg?color=blue)
 
 A React Native Component Library built on top of the concept of neumorphism.(Work for Android and Ios)
